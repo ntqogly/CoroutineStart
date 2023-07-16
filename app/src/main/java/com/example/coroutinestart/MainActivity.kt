@@ -3,6 +3,7 @@ package com.example.coroutinestart
 import android.os.Bundle
 import android.os.Handler
 import android.os.Message
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
@@ -24,6 +25,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun loadData() {
+        Log.d("MainAct", "load started: $this")
         binding.progress.isVisible = true
         binding.buttonLoad.isEnabled = false
         loadCity {
